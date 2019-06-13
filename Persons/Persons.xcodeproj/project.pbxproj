@@ -12,6 +12,7 @@
 		B4C3D70822AF245E00E5F3E1 /* Persons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C3D6F422AF244400E5F3E1 /* Persons.framework */; };
 		B4C3D71022AF248000E5F3E1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C3D70F22AF247F00E5F3E1 /* Person.m */; };
 		B4C3D71122AF259500E5F3E1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C3D70F22AF247F00E5F3E1 /* Person.m */; };
+		B4C5F05722B1BB4F005C9B08 /* BlockLiteralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C5F05622B1BB4F005C9B08 /* BlockLiteralTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		B4C3D70722AF245E00E5F3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4C3D70E22AF247F00E5F3E1 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		B4C3D70F22AF247F00E5F3E1 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B4C5F05622B1BB4F005C9B08 /* BlockLiteralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockLiteralTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B4C3D70522AF245E00E5F3E1 /* PersonsTests.m */,
+				B4C5F05622B1BB4F005C9B08 /* BlockLiteralTests.m */,
 				B4C3D70722AF245E00E5F3E1 /* Info.plist */,
 			);
 			path = PersonsTests;
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4C3D71122AF259500E5F3E1 /* Person.m in Sources */,
+				B4C5F05722B1BB4F005C9B08 /* BlockLiteralTests.m in Sources */,
 				B4C3D70622AF245E00E5F3E1 /* PersonsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
