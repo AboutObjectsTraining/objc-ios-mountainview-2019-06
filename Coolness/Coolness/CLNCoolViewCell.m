@@ -75,9 +75,16 @@ CGPoint CLNTextOrigin = { .x = 12, .y = 7 };
 }
 
 - (void)animateBounceWithDuration:(NSTimeInterval)duration size:(CGSize)size {
+    typeof(self) __weak weakSelf = self;
     [UIView animateWithDuration:duration
-                     animations:^{ [self configureBounceWithSize:size]; }
-                     completion:^(BOOL finished) { [self animateFinalBounce:duration]; }];
+                     animations:^{
+                         typeof(weakSelf) __strong strongSelf = weakSelf;
+                         [strongSelf configureBounceWithSize:size];
+                     }
+                     completion:^(BOOL finished) {
+                         typeof(weakSelf) __strong strongSelf = weakSelf;
+                         [strongSelf animateFinalBounce:duration];
+                     }];
 }
 
 // MARK: - Drawing and resizing
