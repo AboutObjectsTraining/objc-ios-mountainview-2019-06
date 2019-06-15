@@ -3,13 +3,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class RLMBook;
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RELViewBookController : UITableViewController
+@interface UIStoryboardSegue (RELAdditions)
 
-@property (strong, nonatomic) RLMBook *book;
+@property (readonly, nonatomic) id rel_destinationViewController;
 
 @end
 
